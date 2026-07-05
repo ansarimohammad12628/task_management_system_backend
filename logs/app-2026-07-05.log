@@ -1,0 +1,326 @@
+[2026-07-05 00:21:55] INFO : Task Controller => getAllTasks
+[2026-07-05 00:22:02] INFO : Task Controller => getTaskById
+[2026-07-05 00:22:02] INFO : Employee Controller => getAllEmployees
+[2026-07-05 00:52:15] INFO : Employee Controller => getAllEmployees
+[2026-07-05 00:52:15] INFO : Task Controller => getTaskById
+[2026-07-05 00:52:25] INFO : Task Controller => getAllTasks
+[2026-07-05 00:52:28] INFO : Employee Controller => getAllEmployees
+[2026-07-05 00:52:28] INFO : Task Controller => getTaskById
+[2026-07-05 01:05:08] INFO : Server Running On Port 5000
+[2026-07-05 01:05:08] INFO : MySQL Connected Successfully
+[2026-07-05 01:05:14] INFO : Task Controller => getAllTasks
+[2026-07-05 12:28:16] INFO : Employee Controller => getAllEmployees
+[2026-07-05 12:28:19] INFO : Task Controller => getAllTasks
+[2026-07-05 12:28:21] INFO : Employee Controller => getAllEmployees
+[2026-07-05 12:28:24] INFO : Dashboard Controller => getDashboard
+[2026-07-05 12:28:54] INFO : Employee Controller => getAllEmployees
+[2026-07-05 12:48:57] INFO : Server Running On Port 5000
+[2026-07-05 12:48:57] INFO : MySQL Connected Successfully
+[2026-07-05 12:52:12] INFO : Report Controller => taskReport
+[2026-07-05 12:53:41] INFO : Report Controller => taskReport
+[2026-07-05 12:53:55] INFO : Report Controller => taskReport
+[2026-07-05 12:54:29] INFO : Report Controller => taskReport
+[2026-07-05 12:54:41] INFO : Report Controller => taskReport
+[2026-07-05 13:04:34] INFO : Report Controller => taskReport
+[2026-07-05 13:04:52] INFO : Report Controller => taskReport
+[2026-07-05 13:22:08] INFO : Report Controller => taskReport
+[2026-07-05 13:29:15] INFO : Server Running On Port 5000
+[2026-07-05 13:29:15] INFO : MySQL Connected Successfully
+[2026-07-05 13:29:23] INFO : Report Controller => exportExcel
+[2026-07-05 13:29:30] INFO : Report Controller => exportExcel
+[2026-07-05 13:29:35] INFO : Report Controller => exportCSV
+[2026-07-05 14:06:26] INFO : Server Running On Port 5000
+[2026-07-05 14:06:26] INFO : MySQL Connected Successfully
+[2026-07-05 14:06:36] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:09:44] INFO : Notification Controller => readNotification
+[2026-07-05 14:10:59] INFO : Notification Controller => deleteNotification
+[2026-07-05 14:11:12] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:21:41] INFO : Report Controller => taskReport
+[2026-07-05 14:21:45] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:21:52] INFO : Task Controller => getAllTasks
+[2026-07-05 14:21:54] INFO : Employee Controller => getAllEmployees
+[2026-07-05 14:22:31] INFO : Task Controller => addTask
+[2026-07-05 14:22:32] ERROR : Task Service => addTask : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'created_by,
+            updated_by
+        )
+        VALUES
+        (
+       ...' at line 11
+[2026-07-05 14:22:59] INFO : Task Controller => addTask
+[2026-07-05 14:22:59] ERROR : Task Service => addTask : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'created_by,
+            updated_by
+        )
+        VALUES
+        (
+       ...' at line 11
+[2026-07-05 14:23:13] INFO : Task Controller => addTask
+[2026-07-05 14:23:13] ERROR : Task Service => addTask : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'created_by,
+            updated_by
+        )
+        VALUES
+        (
+       ...' at line 11
+[2026-07-05 14:25:23] INFO : Server Running On Port 5000
+[2026-07-05 14:25:23] INFO : MySQL Connected Successfully
+[2026-07-05 14:25:30] INFO : Task Controller => addTask
+[2026-07-05 14:25:30] INFO : Task Controller => getAllTasks
+[2026-07-05 14:26:00] INFO : Notification Created For Task ID : 7
+[2026-07-05 14:26:09] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:26:49] INFO : Employee Controller => getAllEmployees
+[2026-07-05 14:50:20] INFO : Notification Controller => deleteNotification
+[2026-07-05 14:50:20] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:50:26] INFO : Task Controller => getAllTasks
+[2026-07-05 14:50:47] INFO : Server Running On Port 5000
+[2026-07-05 14:50:47] INFO : MySQL Connected Successfully
+[2026-07-05 14:50:51] INFO : Employee Controller => getAllEmployees
+[2026-07-05 14:51:00] INFO : Notification Created For Task ID : 7
+[2026-07-05 14:51:35] INFO : Task Controller => addTask
+[2026-07-05 14:51:35] INFO : Task Controller => getAllTasks
+[2026-07-05 14:51:39] INFO : Notification Controller => getAllNotifications
+[2026-07-05 14:51:39] ERROR : employeeId is not defined
+[2026-07-05 14:51:54] INFO : Employee Controller => getAllEmployees
+[2026-07-05 14:52:00] INFO : Notification Created For Task ID : 8
+[2026-07-05 15:00:58] INFO : Server Running On Port 5000
+[2026-07-05 15:00:58] INFO : MySQL Connected Successfully
+[2026-07-05 15:01:09] INFO : Employee Controller => getAllEmployees
+[2026-07-05 15:01:32] INFO : Task Controller => getAllTasks
+[2026-07-05 15:01:58] INFO : Dashboard Controller => getDashboard
+[2026-07-05 15:02:00] INFO : Employee Controller => getAllEmployees
+[2026-07-05 15:03:35] INFO : Task Controller => getAllTasks
+[2026-07-05 15:05:55] INFO : Task Controller => getAllTasks
+[2026-07-05 15:08:06] INFO : Server Running On Port 5000
+[2026-07-05 15:08:06] INFO : MySQL Connected Successfully
+[2026-07-05 15:09:39] INFO : Authentication Controller => register
+[2026-07-05 15:09:45] INFO : Authentication Controller => register
+[2026-07-05 15:10:25] INFO : Authentication Controller => register
+[2026-07-05 15:10:57] INFO : Authentication Controller => login
+[2026-07-05 15:11:01] INFO : Authentication Controller => login
+[2026-07-05 15:11:15] INFO : Authentication Controller => login
+[2026-07-05 15:11:47] INFO : Authentication Controller => login
+[2026-07-05 15:12:41] INFO : Authentication Controller => login
+[2026-07-05 15:24:41] INFO : Server Running On Port 5000
+[2026-07-05 15:24:41] INFO : MySQL Connected Successfully
+[2026-07-05 15:27:21] INFO : Authentication Controller => login
+[2026-07-05 15:27:50] INFO : Authentication Controller => login
+[2026-07-05 15:28:55] INFO : Authentication Controller => login
+[2026-07-05 15:30:28] INFO : Authentication Controller => login
+[2026-07-05 15:30:39] INFO : Authentication Controller => login
+[2026-07-05 15:34:25] INFO : Authentication Controller => login
+[2026-07-05 15:34:28] INFO : Dashboard Controller => getDashboard
+[2026-07-05 15:55:24] INFO : Dashboard Controller => getDashboard
+[2026-07-05 15:57:07] INFO : Authentication Controller => login
+[2026-07-05 15:57:39] INFO : Server Running On Port 5000
+[2026-07-05 15:57:39] INFO : MySQL Connected Successfully
+[2026-07-05 15:58:17] INFO : Authentication Controller => login
+[2026-07-05 15:58:19] INFO : Dashboard Controller => getDashboard
+[2026-07-05 17:10:57] INFO : Server Running On Port 5000
+[2026-07-05 17:10:57] INFO : MySQL Connected Successfully
+[2026-07-05 18:14:53] INFO : Server Running On Port 5000
+[2026-07-05 18:14:53] INFO : MySQL Connected Successfully
+[2026-07-05 18:17:14] INFO : Task Controller => addTask
+[2026-07-05 18:18:12] INFO : Task Controller => addTask
+[2026-07-05 18:22:55] INFO : Task Controller => addTask
+[2026-07-05 18:25:26] INFO : Task Controller => addTask
+[2026-07-05 18:43:06] INFO : Task Controller => updateTask
+[2026-07-05 18:43:06] ERROR : Task Service => updateTask : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM tasks WHERE id = '1'' at line 1
+[2026-07-05 18:47:04] INFO : Server Running On Port 5000
+[2026-07-05 18:47:04] INFO : MySQL Connected Successfully
+[2026-07-05 18:47:10] INFO : Task Controller => updateTask
+[2026-07-05 18:47:28] INFO : Task Controller => updateTask
+[2026-07-05 18:49:36] INFO : Task Controller => getAllTasks
+[2026-07-05 18:49:55] INFO : Task Controller => updateTask
+[2026-07-05 18:56:28] INFO : Dashboard Controller => getDashboard
+[2026-07-05 18:56:37] INFO : Employee Controller => getAllEmployees
+[2026-07-05 18:56:50] INFO : Task Controller => getAllTasks
+[2026-07-05 18:56:52] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:14:12] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:14:12] INFO : Task Controller => getTaskById
+[2026-07-05 19:14:25] INFO : Task Controller => updateTask
+[2026-07-05 19:14:29] INFO : Task Controller => getAllTasks
+[2026-07-05 19:15:24] INFO : Task Controller => getAllTasks
+[2026-07-05 19:15:38] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:15:38] INFO : Task Controller => getTaskById
+[2026-07-05 19:15:48] INFO : Task Controller => getAllTasks
+[2026-07-05 19:15:53] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:15:53] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:10] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:10] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:14] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:14] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:18] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:18] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:22] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:22] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:29] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:29] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:33] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:33] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:37] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:37] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:41] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:41] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:45] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:45] INFO : Task Controller => getTaskById
+[2026-07-05 19:16:51] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:16:51] INFO : Task Controller => getTaskById
+[2026-07-05 19:17:09] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:17:09] INFO : Task Controller => getTaskById
+[2026-07-05 19:17:16] INFO : Task Controller => getAllTasks
+[2026-07-05 19:17:22] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:17:22] INFO : Task Controller => getTaskById
+[2026-07-05 19:17:28] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:17:28] INFO : Task Controller => getTaskById
+[2026-07-05 19:23:13] INFO : Task Controller => getAllTasks
+[2026-07-05 19:23:26] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:23:26] INFO : Task Controller => getTaskById
+[2026-07-05 19:23:42] INFO : Task Controller => updateTask
+[2026-07-05 19:23:47] INFO : Task Controller => getAllTasks
+[2026-07-05 19:23:52] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:23:52] INFO : Task Controller => getTaskById
+[2026-07-05 19:24:06] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:24:06] INFO : Task Controller => getTaskById
+[2026-07-05 19:28:16] INFO : Task Controller => getAllTasks
+[2026-07-05 19:28:30] INFO : Task Controller => getTaskById
+[2026-07-05 19:28:43] INFO : Task Controller => getTaskById
+[2026-07-05 19:29:15] INFO : Server Running On Port 5000
+[2026-07-05 19:29:15] INFO : MySQL Connected Successfully
+[2026-07-05 19:29:23] INFO : Task Controller => getTaskById
+[2026-07-05 19:33:51] INFO : Server Running On Port 5000
+[2026-07-05 19:33:51] INFO : MySQL Connected Successfully
+[2026-07-05 19:33:58] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:33:58] INFO : Task Controller => getTaskById
+[2026-07-05 19:34:09] INFO : Task Controller => updateTask
+[2026-07-05 19:34:15] INFO : Task Controller => getAllTasks
+[2026-07-05 19:34:18] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:34:18] INFO : Task Controller => getTaskById
+[2026-07-05 19:34:30] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:34:30] INFO : Task Controller => getTaskById
+[2026-07-05 19:34:50] INFO : Task Controller => updateTask
+[2026-07-05 19:34:55] INFO : Task Controller => getAllTasks
+[2026-07-05 19:35:01] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:35:01] INFO : Task Controller => getTaskById
+[2026-07-05 19:36:48] INFO : Server Running On Port 5000
+[2026-07-05 19:36:48] INFO : MySQL Connected Successfully
+[2026-07-05 19:36:56] INFO : Task Controller => getAllTasks
+[2026-07-05 19:37:01] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:37:01] INFO : Task Controller => getTaskById
+[2026-07-05 19:37:05] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:37:05] INFO : Task Controller => getTaskById
+[2026-07-05 19:37:22] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:37:22] INFO : Task Controller => getTaskById
+[2026-07-05 19:37:26] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:37:26] INFO : Task Controller => getTaskById
+[2026-07-05 19:37:51] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:37:51] INFO : Task Controller => getTaskById
+[2026-07-05 19:38:00] INFO : Task Controller => updateTask
+[2026-07-05 19:38:05] INFO : Task Controller => getAllTasks
+[2026-07-05 19:38:09] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:38:09] INFO : Task Controller => getTaskById
+[2026-07-05 19:39:41] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:39:41] INFO : Task Controller => getTaskById
+[2026-07-05 19:39:47] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:39:47] INFO : Task Controller => getTaskById
+[2026-07-05 19:43:04] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:43:04] INFO : Task Controller => getTaskById
+[2026-07-05 19:43:12] INFO : Employee Controller => getAllEmployees
+[2026-07-05 19:43:12] INFO : Task Controller => getTaskById
+[2026-07-05 20:21:14] INFO : Server Running On Port 5000
+[2026-07-05 20:21:14] INFO : MySQL Connected Successfully
+[2026-07-05 20:21:30] INFO : Task Controller => getAllTasks
+[2026-07-05 20:22:33] INFO : Task Controller => getTaskById
+[2026-07-05 20:22:33] INFO : Employee Controller => getAllEmployees
+[2026-07-05 20:22:33] INFO : Task Controller => getTaskAttachment
+[2026-07-05 20:22:52] INFO : Task Controller => updateTask
+[2026-07-05 20:22:56] INFO : Task Controller => getAllTasks
+[2026-07-05 20:23:07] INFO : Employee Controller => getAllEmployees
+[2026-07-05 20:23:07] INFO : Task Controller => getTaskById
+[2026-07-05 20:23:07] INFO : Task Controller => getTaskAttachment
+[2026-07-05 20:32:09] INFO : Task Controller => getAllTasks
+[2026-07-05 20:36:11] INFO : Server Running On Port 5000
+[2026-07-05 20:36:11] INFO : MySQL Connected Successfully
+[2026-07-05 20:36:24] INFO : Employee Controller => getAllEmployees
+[2026-07-05 20:36:24] INFO : Task Controller => getTaskById
+[2026-07-05 20:36:24] INFO : Task Controller => getTaskAttachment
+[2026-07-05 20:37:25] INFO : Employee Controller => getAllEmployees
+[2026-07-05 20:37:25] INFO : Task Controller => getTaskById
+[2026-07-05 20:37:25] INFO : Task Controller => getTaskAttachment
+[2026-07-05 20:39:13] INFO : Task Controller => getTaskAttachment
+[2026-07-05 21:02:41] INFO : Server Running On Port 5000
+[2026-07-05 21:02:41] INFO : MySQL Connected Successfully
+[2026-07-05 21:12:42] INFO : Employee Controller => getAllEmployees
+[2026-07-05 21:12:42] INFO : Task Controller => getTaskById
+[2026-07-05 21:12:52] INFO : Task Controller => getAllTasks
+[2026-07-05 21:13:01] INFO : Employee Controller => getAllEmployees
+[2026-07-05 21:13:01] INFO : Task Controller => getTaskById
+[2026-07-05 21:17:02] INFO : Server Running On Port 5000
+[2026-07-05 21:17:02] INFO : MySQL Connected Successfully
+[2026-07-05 21:18:24] INFO : Task Controller => getAllTasks
+[2026-07-05 21:18:29] INFO : Employee Controller => getAllEmployees
+[2026-07-05 21:18:29] INFO : Task Controller => getTaskById
+[2026-07-05 21:19:54] INFO : Authentication Controller => login
+[2026-07-05 21:46:26] INFO : Task Controller => getAllTasks
+[2026-07-05 21:48:58] INFO : Task Controller => getAllTasks
+[2026-07-05 21:50:05] INFO : Task Controller => getAllTasks
+[2026-07-05 21:50:32] INFO : Task Controller => getAllTasks
+[2026-07-05 22:14:17] INFO : Task Controller => getAllTasks
+[2026-07-05 22:14:44] INFO : Task Controller => getAllTasks
+[2026-07-05 22:14:44] INFO : Task Controller => getAllTasks
+[2026-07-05 22:15:15] INFO : Task Controller => getAllTasks
+[2026-07-05 22:16:56] INFO : Task Controller => getAllTasks
+[2026-07-05 22:17:41] INFO : Task Controller => getAllTasks
+[2026-07-05 22:17:49] INFO : Task Controller => getAllTasks
+[2026-07-05 22:20:51] INFO : Task Controller => getAllTasks
+[2026-07-05 22:33:36] INFO : Task Controller => getAllTasks
+[2026-07-05 22:34:36] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:34:37] INFO : Dashboard Controller => getDashboard
+[2026-07-05 22:34:40] INFO : Report Controller => taskReport
+[2026-07-05 22:35:47] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:35:47] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:37:19] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:37:19] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:37:49] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:37:49] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:37:50] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:37:50] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:39:19] INFO : Task Controller => getAllTasks
+[2026-07-05 22:39:23] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:41:29] INFO : Dashboard Controller => getDashboard
+[2026-07-05 22:41:32] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:41:34] INFO : Task Controller => getAllTasks
+[2026-07-05 22:42:40] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:43:34] INFO : Task Controller => getAllTasks
+[2026-07-05 22:43:48] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:43:50] INFO : Report Controller => taskReport
+[2026-07-05 22:48:50] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:48:52] INFO : Task Controller => getAllTasks
+[2026-07-05 22:48:55] INFO : Report Controller => taskReport
+[2026-07-05 22:48:59] INFO : Dashboard Controller => getDashboard
+[2026-07-05 22:49:05] INFO : Employee Controller => getAllEmployees
+[2026-07-05 22:49:07] INFO : Task Controller => getAllTasks
+[2026-07-05 22:49:09] INFO : Report Controller => taskReport
+[2026-07-05 22:50:20] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:50:20] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:50:20] INFO : Report Controller => taskReport
+[2026-07-05 22:50:54] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:50:54] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:50:54] INFO : Report Controller => taskReport
+[2026-07-05 22:51:17] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:51:17] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:51:17] INFO : Report Controller => taskReport
+[2026-07-05 22:54:13] INFO : Notification Controller => getAllNotifications
+[2026-07-05 22:54:13] ERROR : Cannot read properties of undefined (reading 'employee_id')
+[2026-07-05 22:58:26] INFO : Server Running On Port 5000
+[2026-07-05 22:58:26] INFO : MySQL Connected Successfully
+[2026-07-05 22:58:44] INFO : Server Running On Port 5000
+[2026-07-05 22:58:44] INFO : MySQL Connected Successfully
+[2026-07-05 22:58:54] INFO : Authentication Controller => login
+[2026-07-05 23:02:08] INFO : Server Running On Port 5000
+[2026-07-05 23:02:08] INFO : MySQL Connected Successfully
+[2026-07-05 23:02:31] INFO : Authentication Controller => login
+[2026-07-05 23:02:51] INFO : Notification Controller => getAllNotifications
+[2026-07-05 23:03:05] INFO : Report Controller => taskReport
+[2026-07-05 23:03:05] INFO : Notification Controller => getAllNotifications
+[2026-07-05 23:03:10] INFO : Employee Controller => getAllEmployees
+[2026-07-05 23:52:30] INFO : Task Controller => getAllTasks
+[2026-07-05 23:52:36] INFO : Task Controller => getTaskById
+[2026-07-05 23:52:36] INFO : Employee Controller => getAllEmployees

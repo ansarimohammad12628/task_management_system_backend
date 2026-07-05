@@ -1,0 +1,138 @@
+[2026-07-04 18:07:11] INFO : Server Running On Port 5000
+[2026-07-04 18:07:11] INFO : MySQL Connected Successfully
+[2026-07-04 18:07:15] INFO : Authentication Controller => register
+[2026-07-04 18:09:19] INFO : Authentication Controller => register
+[2026-07-04 18:09:40] INFO : Server Running On Port 5000
+[2026-07-04 18:09:40] INFO : MySQL Connected Successfully
+[2026-07-04 18:10:10] INFO : Authentication Controller => register
+[2026-07-04 18:46:51] INFO : Authentication Controller => register
+[2026-07-04 18:48:00] INFO : Authentication Controller => register
+[2026-07-04 18:48:30] INFO : Authentication Controller => register
+[2026-07-04 18:49:28] INFO : Authentication Controller => login
+[2026-07-04 18:57:20] INFO : Server Running On Port 5000
+[2026-07-04 18:57:20] INFO : MySQL Connected Successfully
+[2026-07-04 18:57:28] INFO : Authentication Controller => login
+[2026-07-04 18:57:32] INFO : Authentication Controller => login
+[2026-07-04 18:57:37] INFO : Authentication Controller => login
+[2026-07-04 18:57:43] INFO : Authentication Controller => login
+[2026-07-04 18:58:00] INFO : Authentication Controller => login
+[2026-07-04 19:01:07] INFO : Authentication Controller => login
+[2026-07-04 19:01:21] INFO : Server Running On Port 5000
+[2026-07-04 19:01:21] INFO : MySQL Connected Successfully
+[2026-07-04 19:01:50] INFO : Authentication Controller => login
+[2026-07-04 20:08:28] INFO : Server Running On Port 5000
+[2026-07-04 20:08:28] INFO : MySQL Connected Successfully
+[2026-07-04 20:08:31] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:17:59] INFO : Server Running On Port 5000
+[2026-07-04 20:17:59] INFO : MySQL Connected Successfully
+[2026-07-04 20:18:33] INFO : Server Running On Port 5000
+[2026-07-04 20:18:33] INFO : MySQL Connected Successfully
+[2026-07-04 20:19:09] INFO : Employee Controller => getEmployeeById
+[2026-07-04 20:25:34] INFO : Server Running On Port 5000
+[2026-07-04 20:25:34] INFO : MySQL Connected Successfully
+[2026-07-04 20:27:52] INFO : Server Running On Port 5000
+[2026-07-04 20:27:52] INFO : MySQL Connected Successfully
+[2026-07-04 20:27:56] INFO : Employee Controller =>  addEmployee
+[2026-07-04 20:27:56] ERROR : Employee Controller =>  addEmployee : EmployeeValidation is not defined
+[2026-07-04 20:32:04] INFO : Employee Controller =>  addEmployee
+[2026-07-04 20:32:04] ERROR : Employee Controller =>  addEmployee : EmployeeValidation is not defined
+[2026-07-04 20:32:18] INFO : Server Running On Port 5000
+[2026-07-04 20:32:18] INFO : MySQL Connected Successfully
+[2026-07-04 20:32:23] INFO : Employee Controller =>  addEmployee
+[2026-07-04 20:32:30] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:36:32] INFO : Server Running On Port 5000
+[2026-07-04 20:36:32] INFO : MySQL Connected Successfully
+[2026-07-04 20:37:40] INFO : Employee Controller => updateEmployee
+[2026-07-04 20:37:51] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:44:39] INFO : Server Running On Port 5000
+[2026-07-04 20:44:39] INFO : MySQL Connected Successfully
+[2026-07-04 20:44:45] INFO : Employee Controller => updateEmployeeStatus
+[2026-07-04 20:44:56] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:45:17] INFO : Employee Controller => updateEmployeeStatus
+[2026-07-04 20:45:23] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:46:16] INFO : Employee Controller => updateEmployeeStatus
+[2026-07-04 20:46:21] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:46:42] INFO : Employee Controller => updateEmployeeStatus
+[2026-07-04 20:46:49] INFO : Employee Controller => getAllEmployees
+[2026-07-04 20:54:56] INFO : Server Running On Port 5000
+[2026-07-04 20:54:56] INFO : MySQL Connected Successfully
+[2026-07-04 20:56:11] INFO : Employee Controller => deleteEmployee
+[2026-07-04 20:56:18] INFO : Employee Controller => getAllEmployees
+[2026-07-04 21:07:19] INFO : Server Running On Port 5000
+[2026-07-04 21:07:19] INFO : MySQL Connected Successfully
+[2026-07-04 21:12:58] INFO : Server Running On Port 5000
+[2026-07-04 21:12:58] INFO : MySQL Connected Successfully
+[2026-07-04 21:13:03] INFO : Task Controller => getAllTasks
+[2026-07-04 21:15:01] INFO : Server Running On Port 5000
+[2026-07-04 21:15:01] INFO : MySQL Connected Successfully
+[2026-07-04 21:15:50] INFO : Task Controller => getTaskById
+[2026-07-04 21:15:50] ERROR : Task Controller => getTaskById : TaskService.getTaskById is not a function
+[2026-07-04 21:16:07] INFO : Server Running On Port 5000
+[2026-07-04 21:16:07] INFO : MySQL Connected Successfully
+[2026-07-04 21:16:09] INFO : Task Controller => getTaskById
+[2026-07-04 21:18:36] INFO : Server Running On Port 5000
+[2026-07-04 21:18:36] INFO : MySQL Connected Successfully
+[2026-07-04 21:20:14] INFO : Server Running On Port 5000
+[2026-07-04 21:20:14] INFO : MySQL Connected Successfully
+[2026-07-04 21:20:17] INFO : Task Controller => addTask
+[2026-07-04 21:20:17] ERROR : Task Controller => addTask : TaskValidation is not defined
+[2026-07-04 21:21:42] INFO : Server Running On Port 5000
+[2026-07-04 21:21:42] INFO : MySQL Connected Successfully
+[2026-07-04 21:21:47] INFO : Task Controller => addTask
+[2026-07-04 21:21:47] ERROR : Task Controller => addTask : TaskService.addTask is not a function
+[2026-07-04 21:22:32] INFO : Server Running On Port 5000
+[2026-07-04 21:22:32] INFO : MySQL Connected Successfully
+[2026-07-04 21:22:40] INFO : Task Controller => addTask
+[2026-07-04 21:22:40] ERROR : Task Controller => addTask : TaskService.addTask is not a function
+[2026-07-04 21:23:59] INFO : Server Running On Port 5000
+[2026-07-04 21:23:59] INFO : MySQL Connected Successfully
+[2026-07-04 21:24:05] INFO : Task Controller => addTask
+[2026-07-04 21:24:16] INFO : Task Controller => getAllTasks
+[2026-07-04 21:28:05] INFO : Server Running On Port 5000
+[2026-07-04 21:28:05] INFO : MySQL Connected Successfully
+[2026-07-04 21:28:17] INFO : Task Controller => updateTask
+[2026-07-04 21:28:19] INFO : Task Controller => updateTask
+[2026-07-04 21:28:26] INFO : Task Controller => getAllTasks
+[2026-07-04 21:32:14] INFO : Server Running On Port 5000
+[2026-07-04 21:32:14] INFO : MySQL Connected Successfully
+[2026-07-04 21:32:17] INFO : Task Controller => updateTaskStatus
+[2026-07-04 21:33:39] INFO : Task Controller => updateTaskStatus
+[2026-07-04 21:33:45] INFO : Task Controller => getAllTasks
+[2026-07-04 21:37:49] INFO : Server Running On Port 5000
+[2026-07-04 21:37:49] INFO : MySQL Connected Successfully
+[2026-07-04 21:37:58] INFO : Task Controller => deleteTask
+[2026-07-04 21:38:05] INFO : Task Controller => getAllTasks
+[2026-07-04 21:51:38] INFO : Server Running On Port 5000
+[2026-07-04 21:51:38] INFO : MySQL Connected Successfully
+[2026-07-04 21:52:51] INFO : Dashboard Controller => getDashboard
+[2026-07-04 21:58:27] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:00:26] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:18:54] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:21:15] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:41:34] INFO : Employee Controller => getAllEmployees
+[2026-07-04 22:42:14] INFO : Employee Controller => getAllEmployees
+[2026-07-04 22:54:38] INFO : Employee Controller => getAllEmployees
+[2026-07-04 22:54:51] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:54:54] INFO : Employee Controller => getAllEmployees
+[2026-07-04 22:54:58] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:56:31] INFO : Dashboard Controller => getDashboard
+[2026-07-04 22:56:35] INFO : Employee Controller => getAllEmployees
+[2026-07-04 22:56:48] INFO : Dashboard Controller => getDashboard
+[2026-07-04 23:02:11] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:13:27] INFO : Task Controller => getAllTasks
+[2026-07-04 23:13:41] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:13:47] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:13:57] INFO : Task Controller => getAllTasks
+[2026-07-04 23:14:01] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:14:01] INFO : Task Controller => getTaskById
+[2026-07-04 23:14:05] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:14:05] INFO : Task Controller => getTaskById
+[2026-07-04 23:14:11] INFO : Task Controller => updateTask
+[2026-07-04 23:14:11] INFO : Task Controller => getAllTasks
+[2026-07-04 23:14:21] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:14:29] INFO : Task Controller => getAllTasks
+[2026-07-04 23:18:23] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:18:23] INFO : Task Controller => getTaskById
+[2026-07-04 23:19:10] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:19:16] INFO : Employee Controller => getAllEmployees
+[2026-07-04 23:20:56] INFO : Task Controller => getAllTasks

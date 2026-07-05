@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "C:\\Users\\f\\Desktop\\Mustafa\\task-management-system\\adminservice\\logs\\.f4d4e5df01439190dece0914a966e7ab3e5651dc-audit.json",
+    "files": [
+        {
+            "date": 1783168388409,
+            "name": "C:\\Users\\f\\Desktop\\Mustafa\\task-management-system\\adminservice\\logs\\app-2026-07-04.log",
+            "hash": "69ba2638701961fd6214d0ee029b93eb519e403faa69cd06e0211a07eb60979c"
+        },
+        {
+            "date": 1783191115655,
+            "name": "C:\\Users\\f\\Desktop\\Mustafa\\task-management-system\\adminservice\\logs\\app-2026-07-05.log",
+            "hash": "59300257fc6e6d0f722239adfd8be2591f46a1a167da3f4d2ff919baf09ce718"
+        },
+        {
+            "date": 1783276702857,
+            "name": "C:\\Users\\f\\Desktop\\Mustafa\\task-management-system\\adminservice\\logs\\app-2026-07-06.log",
+            "hash": "2dbffc57bb7b54212ff0ea151f9fda9aadf48850b1d23580d512fe64313d067d"
+        }
+    ],
+    "hashType": "sha256"
+}

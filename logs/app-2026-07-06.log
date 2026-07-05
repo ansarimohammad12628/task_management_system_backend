@@ -1,0 +1,71 @@
+[2026-07-06 00:08:25] INFO : Server Running On Port 5000
+[2026-07-06 00:08:25] INFO : MySQL Connected Successfully
+[2026-07-06 00:14:49] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:14:49] INFO : Task Controller => getTaskById
+[2026-07-06 00:15:10] INFO : Task Controller => getAllTasks
+[2026-07-06 00:15:10] INFO : Notification Controller => getAllNotifications
+[2026-07-06 00:15:14] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:15:14] INFO : Task Controller => getTaskById
+[2026-07-06 00:16:12] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:16:12] INFO : Task Controller => getTaskById
+[2026-07-06 00:22:49] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:22:49] INFO : Task Controller => getTaskById
+[2026-07-06 00:22:56] INFO : Notification Controller => getAllNotifications
+[2026-07-06 00:22:57] INFO : Task Controller => getAllTasks
+[2026-07-06 00:23:01] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:23:01] INFO : Task Controller => getTaskById
+[2026-07-06 00:24:33] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:24:33] INFO : Task Controller => getTaskById
+[2026-07-06 00:24:38] INFO : Notification Controller => getAllNotifications
+[2026-07-06 00:24:38] INFO : Task Controller => getAllTasks
+[2026-07-06 00:24:46] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:24:46] INFO : Task Controller => getTaskById
+[2026-07-06 00:25:25] INFO : Notification Controller => getAllNotifications
+[2026-07-06 00:25:25] INFO : Task Controller => getAllTasks
+[2026-07-06 00:25:29] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:25:29] INFO : Task Controller => getTaskById
+[2026-07-06 00:26:18] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:26:18] INFO : Task Controller => getTaskById
+[2026-07-06 00:28:30] INFO : Notification Controller => getAllNotifications
+[2026-07-06 00:28:30] INFO : Task Controller => getAllTasks
+[2026-07-06 00:28:37] INFO : Employee Controller => getAllEmployees
+[2026-07-06 00:28:37] INFO : Task Controller => getTaskById
+[2026-07-06 00:31:31] INFO : Task Controller => updateTask
+[2026-07-06 00:32:43] INFO : Task Controller => getAllTasks
+[2026-07-06 00:32:59] INFO : Task Controller => getTaskById
+[2026-07-06 00:33:35] INFO : Task Controller => updateTask
+[2026-07-06 00:41:43] INFO : Server Running On Port 5000
+[2026-07-06 00:41:43] INFO : MySQL Connected Successfully
+[2026-07-06 00:44:28] INFO : Server Running On Port 5000
+[2026-07-06 00:44:28] INFO : MySQL Connected Successfully
+[2026-07-06 00:50:41] INFO : Server Running On Port 5000
+[2026-07-06 00:50:41] INFO : MySQL Connected Successfully
+[2026-07-06 01:04:52] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:04:52] INFO : Task Controller => getTaskById
+[2026-07-06 01:05:01] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:05:01] INFO : Task Controller => getTaskById
+[2026-07-06 01:08:09] INFO : Notification Controller => getAllNotifications
+[2026-07-06 01:08:09] INFO : Task Controller => getAllTasks
+[2026-07-06 01:08:17] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:08:17] INFO : Task Controller => getTaskById
+[2026-07-06 01:08:52] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:08:52] INFO : Task Controller => getTaskById
+[2026-07-06 01:09:33] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:09:33] INFO : Task Controller => getTaskById
+[2026-07-06 01:10:35] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:10:35] INFO : Task Controller => getTaskById
+[2026-07-06 01:10:47] INFO : Task Controller => updateTask
+[2026-07-06 01:10:54] INFO : Task Controller => getAllTasks
+[2026-07-06 01:11:00] INFO : Notification Created For Task ID : 12
+[2026-07-06 01:11:00] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:11:00] INFO : Task Controller => getTaskById
+[2026-07-06 01:19:42] INFO : Authentication Controller => register
+[2026-07-06 01:20:12] INFO : Authentication Controller => login
+[2026-07-06 01:20:14] INFO : Notification Controller => getAllNotifications
+[2026-07-06 01:20:14] INFO : Dashboard Controller => getDashboard
+[2026-07-06 01:20:28] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:20:31] INFO : Task Controller => getAllTasks
+[2026-07-06 01:20:35] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:20:40] INFO : Employee Controller => getAllEmployees
+[2026-07-06 01:21:52] INFO : Employee Controller =>  addEmployee
+[2026-07-06 01:21:52] INFO : Employee Controller => getAllEmployees
