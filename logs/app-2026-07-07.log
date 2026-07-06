@@ -1,0 +1,66 @@
+[2026-07-07 00:00:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:01:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:02:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:03:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:04:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:05:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:06:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:07:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:08:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:09:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:10:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:11:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:12:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:13:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:14:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:15:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:15:36] INFO : Server Running On Port 5000
+[2026-07-07 00:15:36] ERROR : Database Connection Failed : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:16:05] INFO : Server Running On Port 5000
+[2026-07-07 00:16:06] ERROR : Database Connection Failed : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:17:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:18:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:19:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:20:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:21:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:22:00] ERROR : Cron Job Error : getaddrinfo ENOTFOUND mysql.railway.internal
+[2026-07-07 00:23:51] INFO : Server Running On Port 5000
+[2026-07-07 00:23:51] INFO : MySQL Connected Successfully
+[2026-07-07 00:24:00] INFO : Notification Created For Task ID : 9
+[2026-07-07 01:07:55] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:08:03] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:08:03] ERROR : Employee Service => deleteEmployee : Cannot delete or update a parent row: a foreign key constraint fails (`task_management_system`.`tasks`, CONSTRAINT `fk_employee` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+[2026-07-07 01:08:11] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:08:11] ERROR : Employee Service => deleteEmployee : Cannot delete or update a parent row: a foreign key constraint fails (`task_management_system`.`tasks`, CONSTRAINT `fk_employee` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+[2026-07-07 01:19:06] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:19:07] ERROR : Employee Service => deleteEmployee : Cannot delete or update a parent row: a foreign key constraint fails (`task_management_system`.`tasks`, CONSTRAINT `fk_employee` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+[2026-07-07 01:24:55] INFO : Authentication Controller => login
+[2026-07-07 01:24:57] INFO : Notification Controller => getAllNotifications
+[2026-07-07 01:24:57] INFO : Dashboard Controller => getDashboard
+[2026-07-07 01:25:00] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:25:18] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:27:42] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:28:59] INFO : Authentication Controller => login
+[2026-07-07 01:29:01] INFO : Notification Controller => getAllNotifications
+[2026-07-07 01:29:01] INFO : Dashboard Controller => getDashboard
+[2026-07-07 01:29:05] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:29:20] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:29:20] ERROR : Employee Service => deleteEmployee : Cannot delete or update a parent row: a foreign key constraint fails (`task_management_system`.`tasks`, CONSTRAINT `fk_employee` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+[2026-07-07 01:29:59] INFO : Task Controller => getAllTasks
+[2026-07-07 01:30:05] INFO : Task Controller => deleteTask
+[2026-07-07 01:30:05] INFO : Task Controller => getAllTasks
+[2026-07-07 01:30:18] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:30:22] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:30:22] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:30:33] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:30:33] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:30:40] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:30:40] ERROR : Employee Service => deleteEmployee : Cannot delete or update a parent row: a foreign key constraint fails (`task_management_system`.`tasks`, CONSTRAINT `fk_employee` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+[2026-07-07 01:38:00] INFO : Server Running On Port 5000
+[2026-07-07 01:38:00] INFO : MySQL Connected Successfully
+[2026-07-07 01:38:17] INFO : Notification Controller => getAllNotifications
+[2026-07-07 01:38:17] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:38:52] INFO : Employee Controller => deleteEmployee
+[2026-07-07 01:42:02] INFO : Notification Controller => getAllNotifications
+[2026-07-07 01:42:02] INFO : Employee Controller => getAllEmployees
+[2026-07-07 01:42:05] INFO : Employee Controller => deleteEmployee

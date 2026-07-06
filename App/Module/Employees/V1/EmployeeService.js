@@ -521,6 +521,73 @@ const updateEmployeeStatus = async (employeeId, status) => {
 // Purpose : Delete Employee By Id
 /////////////////////////////////////////////////////////////////////////////////////////
 
+// const deleteEmployee = async (employeeId) => {
+//   let connection;
+
+//   try {
+//     // Get Database Connection
+//     connection = await pool.getConnection();
+
+//     /////////////////////////////////////////////////////////////////////////////
+//     // Check Employee Exists
+//     /////////////////////////////////////////////////////////////////////////////
+
+//     const [employee] = await connection.query(
+//       `SELECT id FROM employees WHERE id = ?`,
+//       [employeeId],
+//     );
+
+//     // Return If Employee Not Found
+//     if (employee.length === 0) {
+//       return {
+//         success: false,
+//         response_code: 404,
+//         message: RESPONSE.EMPLOYEE_NOT_FOUND,
+//         data: {},
+//       };
+//     }
+
+//     /////////////////////////////////////////////////////////////////////////////
+//     // Delete Employee
+//     /////////////////////////////////////////////////////////////////////////////
+
+//     await connection.query(`DELETE FROM employees WHERE id = ?`, [employeeId]);
+
+//     /////////////////////////////////////////////////////////////////////////////
+//     // Success Response
+//     /////////////////////////////////////////////////////////////////////////////
+
+//     return {
+//       success: true,
+//       response_code: 200,
+//       message: RESPONSE.EMPLOYEE_DELETED_SUCCESSFULLY,
+//       data: {},
+//     };
+//   } catch (error) {
+//     // Log Error
+//     logger.error(`Employee Service => deleteEmployee : ${error.message}`);
+
+//     /////////////////////////////////////////////////////////////////////////////
+//     // Error Response
+//     /////////////////////////////////////////////////////////////////////////////
+
+//     return {
+//       success: false,
+//       response_code: 500,
+//       message: RESPONSE.SOMETHING_WENT_WRONG,
+//       data: {},
+//     };
+//   } finally {
+//     /////////////////////////////////////////////////////////////////////////////
+//     // Release Database Connection
+//     /////////////////////////////////////////////////////////////////////////////
+
+//     if (connection) {
+//       connection.release();
+//     }
+//   }
+// };
+
 const deleteEmployee = async (employeeId) => {
   let connection;
 
@@ -534,7 +601,7 @@ const deleteEmployee = async (employeeId) => {
 
     const [employee] = await connection.query(
       `SELECT id FROM employees WHERE id = ?`,
-      [employeeId],
+      [employeeId]
     );
 
     // Return If Employee Not Found
@@ -548,10 +615,32 @@ const deleteEmployee = async (employeeId) => {
     }
 
     /////////////////////////////////////////////////////////////////////////////
+    // Check Employee Has Assigned Tasks
+    /////////////////////////////////////////////////////////////////////////////
+
+    const [assignedTasks] = await connection.query(
+      `SELECT id FROM tasks WHERE employee_id = ? LIMIT 1`,
+      [employeeId]
+    );
+
+    if (assignedTasks.length > 0) {
+      return {
+        success: false,
+        response_code: 400,
+        message:
+          "This employee cannot be deleted because one or more tasks are assigned to this employee. Please reassign or delete the tasks first.",
+        data: {},
+      };
+    }
+
+    /////////////////////////////////////////////////////////////////////////////
     // Delete Employee
     /////////////////////////////////////////////////////////////////////////////
 
-    await connection.query(`DELETE FROM employees WHERE id = ?`, [employeeId]);
+    await connection.query(
+      `DELETE FROM employees WHERE id = ?`,
+      [employeeId]
+    );
 
     /////////////////////////////////////////////////////////////////////////////
     // Success Response
