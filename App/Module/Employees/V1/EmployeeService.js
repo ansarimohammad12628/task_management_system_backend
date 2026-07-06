@@ -1,10 +1,23 @@
+const logger = require("../../../Config/logger.config");
 const pool = require("../../../Config/db.poolingConnection");
+const RESPONSE = require("../../../Utils/ResponseMessagesColllection");
+const utils = require("../../../Utils/Utils");
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Get All Employees Service
+// Purpose : Fetch All Active Employees
+/////////////////////////////////////////////////////////////////////////////////////////
 
 const getAllEmployees = async () => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Fetch All Active Employees
+    /////////////////////////////////////////////////////////////////////////////
 
     const query = `
         SELECT
@@ -27,31 +40,67 @@ const getAllEmployees = async () => {
 
     const [employees] = await connection.query(query);
 
+    const formattedEmployees = employees.map((employee) => ({
+      ...employee,
+      created_at: employee.created_at
+        ? utils.commonFormateDate(employee.created_at)
+        : null,
+      updated_at: employee.updated_at
+        ? utils.commonFormateDate(employee.updated_at)
+        : null,
+      from_date: employee.created_at
+        ? utils.fromDate(employee.created_at)
+        : null,
+    }));
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
+
     return {
       success: true,
       response_code: 200,
-      message: "Employees fetched successfully.",
-      data: employees,
+      message: RESPONSE.SUCCESS,
+      data: formattedEmployees,
     };
   } catch (error) {
-    console.log("Employee Service Error :", error);
+    // Log Error
+    logger.error(`Employee Service => getAllEmployees : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: [],
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) connection.release();
   }
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Get Employee By Id Service
+// Purpose : Fetch Employee Details By Employee Id
+/////////////////////////////////////////////////////////////////////////////////////////
 
 const getEmployeeById = async (employeeId) => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Fetch Employee Details
+    /////////////////////////////////////////////////////////////////////////////
 
     const query = `
         SELECT
@@ -74,44 +123,83 @@ const getEmployeeById = async (employeeId) => {
 
     const [employee] = await connection.query(query, [employeeId]);
 
+    const formattedEmployee = {
+      ...employee[0],
+      created_at: employee[0].created_at
+        ? utils.commonFormateDate(employee[0].created_at)
+        : null,
+      updated_at: employee[0].updated_at
+        ? utils.commonFormateDate(employee[0].updated_at)
+        : null,
+      from_date: employee[0].created_at
+        ? utils.fromDate(employee[0].created_at)
+        : null,
+    };
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Check Employee Exists
+    /////////////////////////////////////////////////////////////////////////////
+
     if (employee.length === 0) {
       return {
         success: false,
         response_code: 404,
-        message: "Employee not found.",
-        data: {},
+        message: RESPONSE.EMPLOYEE_NOT_FOUND,
+        data:formattedEmployee,
       };
     }
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: true,
       response_code: 200,
-      message: "Employee fetched successfully.",
+      message: RESPONSE.SUCCESS,
       data: employee[0],
     };
   } catch (error) {
+    // Log Error
     logger.error(`Employee Service => getEmployeeById : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: {},
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) {
       connection.release();
     }
   }
 };
 
+/////////////////////////////////////////////////////////////////////////////////////////
+// Add Employee Service
+// Purpose : Create New Employee
+/////////////////////////////////////////////////////////////////////////////////////////
+
 const addEmployee = async (employeeData) => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
 
-    // Email Exists Check
+    /////////////////////////////////////////////////////////////////////////////
+    // Check Email Already Exists
+    /////////////////////////////////////////////////////////////////////////////
+
     const checkEmailQuery = `
         SELECT id
         FROM employees
@@ -122,16 +210,20 @@ const addEmployee = async (employeeData) => {
       employeeData.email,
     ]);
 
+    // Return If Email Already Exists
     if (emailExists.length > 0) {
       return {
         success: false,
         response_code: 409,
-        message: "Email already exists.",
+        message: RESPONSE.EMAIL_ALREADY_EXISTS,
         data: {},
       };
     }
 
+    /////////////////////////////////////////////////////////////////////////////
     // Insert Employee
+    /////////////////////////////////////////////////////////////////////////////
+
     const insertQuery = `
         INSERT INTO employees
         (
@@ -168,38 +260,61 @@ const addEmployee = async (employeeData) => {
     ];
 
     const [result] = await connection.query(insertQuery, values);
+    
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: true,
       response_code: 201,
-      message: "Employee created successfully.",
+      message: RESPONSE.EMPLOYEE_CREATED_SUCCESSFULLY,
       data: {
         employee_id: result.insertId,
       },
     };
   } catch (error) {
+    // Log Error
     logger.error(`Employee Service => createEmployee : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: {},
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) {
       connection.release();
     }
   }
 };
 
+/////////////////////////////////////////////////////////////////////////////////////////
+// Update Employee Service
+// Purpose : Update Employee Details
+/////////////////////////////////////////////////////////////////////////////////////////
+
 const updateEmployee = async (employeeId, employeeData) => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
 
-    // Employee Exists Check
+    /////////////////////////////////////////////////////////////////////////////
+    // Check Employee Exists
+    /////////////////////////////////////////////////////////////////////////////
+
     const checkEmployeeQuery = `
       SELECT id
       FROM employees
@@ -208,16 +323,20 @@ const updateEmployee = async (employeeId, employeeData) => {
 
     const [employee] = await connection.query(checkEmployeeQuery, [employeeId]);
 
+    // Return If Employee Not Found
     if (employee.length === 0) {
       return {
         success: false,
         response_code: 404,
-        message: "Employee not found.",
+        message: RESPONSE.EMPLOYEE_NOT_FOUND,
         data: {},
       };
     }
 
-    // Duplicate Email Check
+    /////////////////////////////////////////////////////////////////////////////
+    // Check Duplicate Email
+    /////////////////////////////////////////////////////////////////////////////
+
     const checkEmailQuery = `
       SELECT id
       FROM employees
@@ -230,16 +349,20 @@ const updateEmployee = async (employeeId, employeeData) => {
       employeeId,
     ]);
 
+    // Return If Email Already Exists
     if (email.length > 0) {
       return {
         success: false,
         response_code: 409,
-        message: "Email already exists.",
+        message: RESPONSE.EMAIL_ALREADY_EXISTS,
         data: {},
       };
     }
 
-    // Update Query
+    /////////////////////////////////////////////////////////////////////////////
+    // Update Employee Details
+    /////////////////////////////////////////////////////////////////////////////
+
     const updateQuery = `
       UPDATE employees
       SET
@@ -252,7 +375,7 @@ const updateEmployee = async (employeeId, employeeData) => {
         salary = ?,
         joining_date = ?,
         updated_by = ?
-      WHERE id = ?
+        WHERE id = ?
     `;
 
     const values = [
@@ -270,133 +393,202 @@ const updateEmployee = async (employeeId, employeeData) => {
 
     await connection.query(updateQuery, values);
 
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
+
     return {
       success: true,
       response_code: 200,
-      message: "Employee updated successfully.",
+      message: RESPONSE.EMPLOYEE_UPDATED_SUCCESSFULLY,
       data: {},
     };
   } catch (error) {
+    // Log Error
     logger.error(`Employee Service => updateEmployee : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: {},
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) {
       connection.release();
     }
   }
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Update Employee Status Service
+// Purpose : Update Employee Active / Inactive Status
+/////////////////////////////////////////////////////////////////////////////////////////
 
 const updateEmployeeStatus = async (employeeId, status) => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
 
-    // Employee Exists Check
+    /////////////////////////////////////////////////////////////////////////////
+    // Check Employee Exists
+    /////////////////////////////////////////////////////////////////////////////
+
     const [employee] = await connection.query(
       `SELECT id FROM employees WHERE id = ?`,
       [employeeId],
     );
 
+    // Return If Employee Not Found
     if (employee.length === 0) {
       return {
         success: false,
         response_code: 404,
-        message: "Employee not found.",
+        message: RESPONSE.EMPLOYEE_NOT_FOUND,
         data: {},
       };
     }
 
-    // Status Validation
+    /////////////////////////////////////////////////////////////////////////////
+    // Validate Status
+    /////////////////////////////////////////////////////////////////////////////
+
     if (status != 0 && status != 1) {
       return {
         success: false,
         response_code: 400,
-        message: "Status must be 0 or 1.",
+        message: RESPONSE.INVALID_REQUEST,
         data: {},
       };
     }
 
-    // Update Status
+    /////////////////////////////////////////////////////////////////////////////
+    // Update Employee Status
+    /////////////////////////////////////////////////////////////////////////////
+
     await connection.query(
       `UPDATE employees SET status = ?, updated_by = ? WHERE id = ?`,
       [status, 1, employeeId],
     );
 
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
+
     return {
       success: true,
       response_code: 200,
-      message: "Employee status updated successfully.",
+      message: RESPONSE.EMPLOYEE_UPDATED_SUCCESSFULLY,
       data: {},
     };
   } catch (error) {
+    // Log Error
     logger.error(`Employee Service => updateEmployeeStatus : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: {},
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) {
       connection.release();
     }
   }
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Delete Employee Service
+// Purpose : Delete Employee By Id
+/////////////////////////////////////////////////////////////////////////////////////////
 
 const deleteEmployee = async (employeeId) => {
   let connection;
 
   try {
+    // Get Database Connection
     connection = await pool.getConnection();
 
+    /////////////////////////////////////////////////////////////////////////////
     // Check Employee Exists
+    /////////////////////////////////////////////////////////////////////////////
+
     const [employee] = await connection.query(
       `SELECT id FROM employees WHERE id = ?`,
       [employeeId],
     );
 
+    // Return If Employee Not Found
     if (employee.length === 0) {
       return {
         success: false,
         response_code: 404,
-        message: "Employee not found.",
+        message: RESPONSE.EMPLOYEE_NOT_FOUND,
         data: {},
       };
     }
 
+    /////////////////////////////////////////////////////////////////////////////
     // Delete Employee
+    /////////////////////////////////////////////////////////////////////////////
+
     await connection.query(`DELETE FROM employees WHERE id = ?`, [employeeId]);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Success Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: true,
       response_code: 200,
-      message: "Employee deleted successfully.",
+      message: RESPONSE.EMPLOYEE_DELETED_SUCCESSFULLY,
       data: {},
     };
   } catch (error) {
+    // Log Error
     logger.error(`Employee Service => deleteEmployee : ${error.message}`);
+
+    /////////////////////////////////////////////////////////////////////////////
+    // Error Response
+    /////////////////////////////////////////////////////////////////////////////
 
     return {
       success: false,
       response_code: 500,
-      message: "Something went wrong.",
+      message: RESPONSE.SOMETHING_WENT_WRONG,
       data: {},
     };
   } finally {
+    /////////////////////////////////////////////////////////////////////////////
+    // Release Database Connection
+    /////////////////////////////////////////////////////////////////////////////
+
     if (connection) {
       connection.release();
     }
   }
 };
 
+// Export Controllers
 module.exports = {
   getAllEmployees,
   getEmployeeById,

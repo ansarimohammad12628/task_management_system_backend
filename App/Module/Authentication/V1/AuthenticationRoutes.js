@@ -1,11 +1,31 @@
+// Import Express Framework
 const express = require("express");
 
+// Create Router Instance
 const router = express.Router();
 
+// Import Authentication Controller
 const controller = require("./AuthenticationController");
 
-router.post("/register", controller.register);
+/////////////////////////////////////////////////////////////////////////////////////////
+// Authentication Routes
+/////////////////////////////////////////////////////////////////////////////////////////
 
-router.post("/login", controller.login);
+// -----------------------------------------------------------------------------
+// Register Route
+// -----------------------------------------------------------------------------
+router.post(
+  "/register",
+  controller.register
+);
 
+// -----------------------------------------------------------------------------
+// Login Route
+// -----------------------------------------------------------------------------
+router.post(
+  "/login",
+  controller.login
+);
+
+// Export Router
 module.exports = router;
