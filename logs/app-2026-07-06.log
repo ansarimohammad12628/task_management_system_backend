@@ -159,3 +159,14 @@
 [2026-07-06 14:06:19] INFO : Task Controller => getTaskById
 [2026-07-06 14:07:09] INFO : Task Controller => getAllTasks
 [2026-07-06 14:07:29] INFO : Task Controller => getAllTasks
+[2026-07-06 14:07:40] INFO : Server Running On Port 5000
+[2026-07-06 14:07:40] INFO : MySQL Connected Successfully
+[2026-07-06 14:07:47] INFO : Task Controller => getAllTasks
+[2026-07-06 14:08:11] INFO : Notification Controller => getAllNotifications
+[2026-07-06 14:08:11] INFO : Task Controller => getAllTasks
+[2026-07-06 14:08:17] INFO : Employee Controller => getAllEmployees
+[2026-07-06 14:08:21] INFO : Task Controller => getAllTasks
+[2026-07-06 14:08:35] INFO : Employee Controller => getAllEmployees
+[2026-07-06 14:09:19] INFO : Task Controller => addTask
+[2026-07-06 14:09:19] INFO : Task Controller => getAllTasks
+[2026-07-06 14:10:00] INFO : Notification Created For Task ID : 14
