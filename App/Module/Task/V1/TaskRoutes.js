@@ -65,17 +65,6 @@ router.put(
 );
 
 // -----------------------------------------------------------------------------
-// Update Task Status
-// Method : PUT
-// URL    : /updateTaskStatus/:id
-// -----------------------------------------------------------------------------
-router.put(
-  "/updateTaskStatus/:id",
-  CommonValidator.validateJWTToken,
-  TaskController.updateTaskStatus
-);
-
-// -----------------------------------------------------------------------------
 // Delete Task
 // Method : DELETE
 // -----------------------------------------------------------------------------

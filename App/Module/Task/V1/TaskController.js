@@ -143,36 +143,6 @@ updateTask = async (req, res) => {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////
-// Update Task Status Controller
-// Purpose : Change Task Status
-/////////////////////////////////////////////////////////////////////////////////////////
-
-updateTaskStatus = async (req, res) => {
-  logger.info("Task Controller => updateTaskStatus");
-
-  try {
-    // Call Service
-    const response = await TaskService.updateTaskStatus(
-      req.params.id,
-      req.body.status,
-    );
-
-    // Return Response
-    return res.status(response.response_code).json(response);
-  } catch (error) {
-    logger.error(`Task Controller => updateTaskStatus : ${error.message}`);
-
-    // Internal Server Error Response
-    return res.status(500).json({
-      success: false,
-      response_code: 500,
-      message: RESPONSE.SOMETHING_WENT_WRONG,
-      data: {},
-    });
-  }
-};
-
-/////////////////////////////////////////////////////////////////////////////////////////
 // Delete Task Controller
 // Purpose : Delete Task By Id
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -240,7 +210,6 @@ module.exports = {
   getTaskById,
   addTask,
   updateTask,
-  updateTaskStatus,
   deleteTask,
   getTaskAttachmentById
 };

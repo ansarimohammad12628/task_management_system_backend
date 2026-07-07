@@ -34,7 +34,6 @@ const getAllEmployees = async () => {
             created_at,
             updated_at
         FROM employees
-        WHERE status = 1
         ORDER BY id DESC
     `;
 

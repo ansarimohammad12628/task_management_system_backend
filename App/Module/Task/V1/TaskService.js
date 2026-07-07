@@ -518,101 +518,6 @@ const updateTask = async (taskId, taskData, file) => {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////
-// Update Task Status Service
-// Purpose : Update Task Status
-/////////////////////////////////////////////////////////////////////////////////////////
-
-const updateTaskStatus = async (taskId, status) => {
-  let connection;
-
-  try {
-    // Get Database Connection
-    connection = await pool.getConnection();
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Check Task Exists
-    /////////////////////////////////////////////////////////////////////////////
-
-    const [task] = await connection.query(`SELECT id FROM tasks WHERE id = ?`, [
-      taskId,
-    ]);
-
-    // Return If Task Not Found
-    if (task.length === 0) {
-      return {
-        success: false,
-        response_code: 404,
-        message: RESPONSE.TASK_NOT_FOUND,
-        data: {},
-      };
-    }
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Validate Task Status
-    /////////////////////////////////////////////////////////////////////////////
-
-    const validStatus = ["Pending", "In Progress", "Completed"];
-
-    if (!validStatus.includes(status)) {
-      return {
-        success: false,
-        response_code: 400,
-        message: RESPONSE.INVALID_TASK_STATUS,
-        data: {},
-      };
-    }
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Update Task Status
-    /////////////////////////////////////////////////////////////////////////////
-
-    await connection.query(
-      `
-      UPDATE tasks
-      SET
-        status = ?,
-        updated_by = ?
-      WHERE id = ?
-      `,
-      [status, 1, taskId],
-    );
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Success Response
-    /////////////////////////////////////////////////////////////////////////////
-
-    return {
-      success: true,
-      response_code: 200,
-      message: RESPONSE.TASK_STATUS_UPDATED_SUCCESSFULLY,
-      data: {},
-    };
-  } catch (error) {
-    // Log Error
-    logger.error(`Task Service => updateTaskStatus : ${error.message}`);
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Error Response
-    /////////////////////////////////////////////////////////////////////////////
-
-    return {
-      success: false,
-      response_code: 500,
-      message: RESPONSE.SOMETHING_WENT_WRONG,
-      data: {},
-    };
-  } finally {
-    /////////////////////////////////////////////////////////////////////////////
-    // Release Database Connection
-    /////////////////////////////////////////////////////////////////////////////
-
-    if (connection) {
-      connection.release();
-    }
-  }
-};
-
-/////////////////////////////////////////////////////////////////////////////////////////
 // Delete Task Service
 // Purpose : Delete Task By Id
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -797,7 +702,6 @@ module.exports = {
   getTaskById,
   addTask,
   updateTask,
-  updateTaskStatus,
   deleteTask,
   getTaskAttachmentById,
 };
